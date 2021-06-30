@@ -1,0 +1,254 @@
+body {
+  background-color: #f6dfeb;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #e47ebd;
+  font-family: 'Gaegu', cursive;
+  font-size: 3.5rem;
+  margin: 0 auto;
+  /* 4 indicators: top left bottom right**
+  **3 indicators: top left&right bottom
+  **2 indicators: top&bottom  left&right
+  **1 indicator: all sides*/
+}
+
+h2 {
+  font-family: 'Gaegu', cursive;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-family:  'Lato', sans-serif; /*'Handlee', cursive;*/
+}
+
+hr {
+  border-color: #E4BAD4;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 5px;
+  width: 5%;
+}
+
+/**************CLASS SELECTORS**************/
+
+.top-container {
+  padding-top: 100px;
+  position: relative;
+}
+
+.top-sparkle {
+  position: absolute;
+  right: 150px;
+  top: 50px;
+  transform: transparency 20%;
+  width: 30%;
+}
+
+.main-icon {
+  border-radius: 100%;
+  margin: 20px;
+  width: 40%;
+}
+
+.bottom-sparkle {
+  left: 250px;
+  position: absolute;
+  top: 300px;
+ /* transform: rotate(55deg);*/
+  width: 10%;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.text {
+  color: #B4A5A5;
+  margin: 0;
+}
+
+
+
+
+.middle-container {
+  margin-bottom: 0;
+  background-color: white;
+}
+
+.pink-text {
+  align-content:space-around;
+  color: #e47ebd
+}
+
+.pink-text-shadow {
+  text-shadow: 1px 1px 2px white, 0 0 1em #E36BAE, 0 0 0.2em #E36BAE;
+  /*#E36BAE 0 -2px;*/
+}
+
+.gyna {
+  border-radius: 100%;
+  margin: 20px;
+  width: 15%;
+}
+
+.about {
+  margin: 50px 100px;
+  padding-top: 50px;
+}
+
+.about_content {
+  line-height: 1.5;
+  margin: auto;
+  width: 50%;
+}
+
+.skill-row img {
+  padding: 10px;
+  width: 5%;
+}
+
+.skills {
+  margin: 50px 100px;
+}
+
+.contact-me {
+  margin: 50px 100px 0;
+}
+
+.btn-contact-me {
+  background-color: white;
+  border: 2px solid #E36BAE;
+  color: #E36BAE;
+  font-family: 'Gaegu', cursive;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn-contact-me:hover {
+  border: 2px solid #78DEC7;
+  background:#CAF7E3;
+  color:#E36BAE;
+}
+
+
+
+.bottom-container {
+  background-color: #78DEC7;
+  width: 100%;
+}
+
+.linkedin-link {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: #E36BAE
+  
+}
+
+.footer {
+  padding: 50px 0;
+}
+
+.footer-label {
+  padding-top: 30px;
+  font-size: 15px;
+  color: #EDFFEC;
+}
+
+
+
+/* Icons */
+
+.social-icons {
+  color:#EDFFEC;
+  background: #e47ebd;
+  border-radius:4px;
+  text-align:center;
+  text-decoration:none;
+  font-family:fontawesome;
+  position: relative;
+  display: inline-block;
+  width:40px;
+  height:28px;
+  padding-top:12px;
+  margin:0 5px;
+  -o-transition:all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+   -webkit-font-smoothing: antialiased;
+}
+
+
+.social-icons:hover {
+  background: #EDFFEC;
+  color:#e47ebd;
+}
+
+/* pop-up text */
+
+.social-icons span {
+  color:#e47ebd;
+  position:absolute;
+  font-family: 'Lato', sans-serif;
+  bottom:0;
+  left:-25px;
+  right:-25px;
+  padding:5px 7px;
+  font-size:14px;
+  border-radius:2px;
+  background:#F6DFEB;
+  visibility:hidden;
+  opacity:0;
+  -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+/* pop-up text arrow */
+
+.social-icons span:before {
+  content:'';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position:absolute;
+  bottom:-5px;
+  left:40px;
+}
+
+/* text pops up when icon is in hover state */
+
+.social-icons:hover span {
+  bottom:50px;
+  visibility:visible;
+  opacity:1;
+}
+
+/* font awesome icons */
+
+.social-icons:nth-of-type(1):before {
+content:'\f0e1';
+}
+.social-icons:nth-of-type(2):before {
+content:'\f099';
+}
+.social-icons:nth-of-type(3):before {
+content:'\f113';
+}
+
